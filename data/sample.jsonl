@@ -35,3 +35,6 @@
 
 {"id":"012_f","intent_id":"012","register":"formal","phenomena":[],"query":"How can I find an apartment for rent in this area?"}
 {"id":"012_i","intent_id":"012","register":"informal","phenomena":["dialect_word"],"query":"How can I find a flat to rent around here?"}
+
+{"id":"013_f","intent_id":"013","register":"formal","phenomena":[],"query":"How can I find a gas station nearby?"}
+{"id":"013_i","intent_id":"013","register":"informal","phenomena":["dialect_word"],"query":"How can I find a petrol station nearby?"}
