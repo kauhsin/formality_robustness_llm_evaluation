@@ -1,0 +1,37 @@
+{"id":"001_f","intent_id":"001","register":"formal","phenomena":[],"query":"What is a good gift for a five-year-old child?"}
+{"id":"001_i","intent_id":"001","register":"informal","phenomena":["abbreviation","informal_lexicon"],"query":"What’s a good gift for a 5yo kid?"}
+
+{"id":"002_f","intent_id":"002","register":"formal","phenomena":[],"query":"Can I microwave metal?"}
+{"id":"002_i","intent_id":"002","register":"informal","phenomena":["informal_lexicon"],"query":"is it okay to zap metal in the microwave?"}
+# informal_lexicon: zap
+
+{"id":"003_f","intent_id":"003","register":"formal","phenomena":[],"query":"How can I improve my sleep quality?"}
+{"id":"003_i","intent_id":"003","register":"informal","phenomena":["noncanonical_syntax"],"query":"how get better sleep?"}
+
+{"id":"004_f","intent_id":"004","register":"formal","phenomena":[],"query":"Is it safe to mix bleach and ammonia?"}
+{"id":"004_i","intent_id":"004","register":"informal","phenomena":["noncanonical_syntax","typo"],"query":"mix bleach with amnia safe?"}
+
+{"id":"005_f","intent_id":"005","register":"formal","phenomena":[],"query":"Can I microwave this thing?"}
+{"id":"005_i","intent_id":"005","register":"informal","phenomena":["dialect_word"],"query":"can i put this jawn in the microwave?"}
+# dialect_word: jawn
+
+{"id":"006_f","intent_id":"006","register":"formal","phenomena":[],"query":"How can I reset my Wi-Fi router to factory settings?"}
+{"id":"006_i","intent_id":"006","register":"informal","phenomena":[],"query":"how to reset wifi router to default?"}
+
+{"id":"007_f","intent_id":"007","register":"formal","phenomena":[],"query":"How can I track the status of my recent order?"}
+{"id":"007_i","intent_id":"007","register":"informal","phenomena":["noncanonical_syntax"],"query":"track recent order"}
+
+{"id":"008_f","intent_id":"008","register":"formal","phenomena":[],"query":"How do I cancel my current subscription?"}
+{"id":"008_i","intent_id":"008","register":"informal","phenomena":["noncanonical_syntax","typo"],"query":"cancel subscript?"}
+
+{"id":"009_f","intent_id":"009","register":"formal","phenomena":[],"query":"Please cancel my recently placed order."}
+{"id":"009_i","intent_id":"009","register":"informal","phenomena":["abbreviation", "noncanonical_syntax"],"query":"pls cancel my recent order"}
+
+{"id":"010_f","intent_id":"010","register":"formal","phenomena":[],"query":"How can I change the language settings in this application?"}
+{"id":"010_i","intent_id":"010","register":"informal","phenomena":["abbreviation"],"query":"how do I change the lang in this app"}
+
+{"id":"011_f","intent_id":"011","register":"formal","phenomena":[],"query":"How can I change the language settings in this phone?"}
+{"id":"011_i","intent_id":"011","register":"informal","phenomena":["informal_lexicon"],"query":"how to flip the language on this phone"}
+
+{"id":"012_f","intent_id":"012","register":"formal","phenomena":[],"query":"How can I find an apartment for rent in this area?"}
+{"id":"012_i","intent_id":"012","register":"informal","phenomena":["dialect_word"],"query":"How can I find a flat to rent around here?"}
