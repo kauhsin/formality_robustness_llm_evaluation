@@ -2,14 +2,14 @@ import json
 import sys
 from collections import Counter
 
-def main(path):
+def main(input_path, output_path):
     total = 0
     register_counter = Counter()
     phenomena_counter = Counter()
     intent_counter = Counter()
 
 # Load JSONL data into memory
-    with open(path, "r", encoding="utf-8") as f:
+    with open(input_path, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if not line or line.startswith("#"):
@@ -28,17 +28,24 @@ def main(path):
             intent_counter[intent_id] += 1
 
 
-# Print summary to console
-    print("=== Basic Stats ===")
-    print(f"Total records: {total}")
-    print("By register:", dict(register_counter))
-    print("By phenomena:", dict(phenomena_counter))
-    print("By intent_id:", dict(intent_counter))
+# generate summary, save to output_path
+    summary = {
+        "total": total,
+        "by_register": dict(register_counter),
+        "by_phenomena": dict(phenomena_counter),
+        # "by_intent_id": dict(intent_counter)
+    }
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2, sort_keys=True)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python src/main.py <input_jsonl>")
+    if len(sys.argv) < 3:
+        print("Usage: python src/main.py <input_jsonl> <output_path>")
         sys.exit(1)
 
     input_path = sys.argv[1]
-    main(input_path)
+    output_path = sys.argv[2]
+    main(input_path, output_path)
+
+
