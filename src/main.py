@@ -1,6 +1,7 @@
 import json
 import sys
 from collections import Counter
+# print("I am:", __name__)
 
 def main(input_path, output_path):
     total = 0
@@ -39,13 +40,18 @@ def main(input_path, output_path):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2, sort_keys=True)
 
-if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python src/main.py <input_jsonl> <output_path>")
+if __name__ == "__main__": # when this script is called from CLI directly
+    if len(sys.argv) == 2 and sys.argv[1] in ("-h", "--help"):
+        print("Usage: python src/main.py <input_jsonl> --out <output_path>")
+        sys.exit(0)
+
+    if len(sys.argv) != 4 or sys.argv[2] != "--out":
+        print("Usage: python src/main.py <input_jsonl> --out <output_path>")
         sys.exit(1)
 
+
     input_path = sys.argv[1]
-    output_path = sys.argv[2]
+    output_path = sys.argv[3]
     main(input_path, output_path)
 
 
