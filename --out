@@ -1,0 +1,14 @@
+{
+  "by_phenomena": {
+    "abbreviation": 3,
+    "dialect_word": 3,
+    "informal_lexicon": 3,
+    "noncanonical_syntax": 5,
+    "typo": 2
+  },
+  "by_register": {
+    "formal": 13,
+    "informal": 13
+  },
+  "total": 26
+}

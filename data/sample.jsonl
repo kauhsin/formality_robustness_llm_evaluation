@@ -38,3 +38,89 @@
 
 {"id":"013_f","intent_id":"013","register":"formal","phenomena":[],"query":"How can I find a gas station nearby?"}
 {"id":"013_i","intent_id":"013","register":"informal","phenomena":["dialect_word"],"query":"How can I find a petrol station nearby?"}
+
+{"id":"014_f","intent_id":"014","register":"formal","phenomena":[],"query":"How can I find a restroom nearby?"}
+{"id":"014_i","intent_id":"014","register":"informal","phenomena":["informal_lexicon"],"query":"How can I find a w'c nearby?"}
+
+{"id":"015_f","intent_id":"015","register":"formal","phenomena":[],"query":"How can I permanently delete my account?"}
+{"id":"015_i","intent_id":"015","register":"informal","phenomena":["noncanonical_syntax","abbreviation"],"query":"how delete acc forever?"}
+
+{"id":"016_f","intent_id":"016","register":"formal","phenomena":[],"query":"Where can I find the company's return policy?"}
+{"id":"016_i","intent_id":"016","register":"informal","phenomena":["informal_lexicon"],"query":"what's the deal with returns here?"}
+
+{"id":"017_f","intent_id":"017","register":"formal","phenomena":[],"query":"How do I contact customer support by phone?"}
+{"id":"017_i","intent_id":"017","register":"informal","phenomena":["abbreviation", "informal_lexicon"],"query":"how do I hit up support on the phone?"}
+
+{"id":"018_f","intent_id":"018","register":"formal","phenomena":[],"query":"What are the opening hours for the gym?"}
+{"id":"018_i","intent_id":"018","register":"informal","phenomena":["noncanonical_syntax"],"query":"when's the gym open?"}
+
+{"id":"019_f","intent_id":"019","register":"formal","phenomena":[],"query":"Is it possible to get faster shipping for my order?"}
+{"id":"019_i","intent_id":"019","register":"informal","phenomena":["noncanonical_syntax"],"query":"fast shipping?"}
+
+{"id":"020_f","intent_id":"020","register":"formal","phenomena":[],"query":"How do I update the firmware on this device?"}
+{"id":"020_i","intent_id":"020","register":"informal","phenomena":["informal_lexicon","typo"],"query":"how to update frimware on my gadget?"}
+
+{"id":"021_f","intent_id":"021","register":"formal","phenomena":[],"query":"I would like to request a refund for my purchase."}
+{"id":"021_i","intent_id":"021","register":"informal","phenomena":["noncanonical_syntax", "informal_lexicon"],"query":"i want my money back"}
+
+{"id":"022_f","intent_id":"022","register":"formal","phenomena":[],"query":"How can I sync my contacts to the cloud?"}
+{"id":"022_i","intent_id":"022","register":"informal","phenomena":[],"query":"how to sync contacts to the cloud?"}
+# sync is considered as a formal usage here
+
+{"id":"023_f","intent_id":"023","register":"formal","phenomena":[],"query":"Do I need to make a reservation for dinner tonight?"}
+{"id":"023_i","intent_id":"023","register":"informal","phenomena":["informal_lexicon"],"query":"do i need to book a table for tonight?"}
+
+{"id":"024_f","intent_id":"024","register":"formal","phenomena":[],"query":"I am having trouble connecting to the internet."}
+{"id":"024_i","intent_id":"024","register":"informal","phenomena":["informal_lexicon", "noncanonical_syntax"],"query":"my web's acting up"}
+
+{"id":"025_f","intent_id":"025","register":"formal","phenomena":[],"query":"What is the weather forecast for tomorrow?"}
+{"id":"025_i","intent_id":"025","register":"informal","phenomena":["noncanonical_syntax"],"query":"weather tomorrow?"}
+
+{"id":"026_f","intent_id":"026","register":"formal","phenomena":[],"query":"How can I increase the font size on my screen?"}
+{"id":"026_i","intent_id":"026","register":"informal","phenomena":["informal_lexicon"],"query":"how to make the text bigger?"}
+
+{"id":"027_f","intent_id":"027","register":"formal","phenomena":[],"query":"Is there a pharmacy that is open 24 hours nearby?"}
+{"id":"027_i","intent_id":"027","register":"informal","phenomena":["typo"],"query":"any 24hr pharmcy near me?"}
+
+{"id":"028_f","intent_id":"028","register":"formal","phenomena":[],"query":"I forgot the password for my email account."}
+{"id":"028_i","intent_id":"028","register":"informal","phenomena":["noncanonical_syntax", "typo"],"query":"forgot my email pass"}
+
+{"id":"029_f","intent_id":"029","register":"formal","phenomena":[],"query":"Where is the nearest ATM?"}
+{"id":"029_i","intent_id":"029","register":"informal","phenomena":[],"query":"where is the closest ATM?"}
+
+{"id":"030_f","intent_id":"030","register":"formal","phenomena":[],"query":"How do I mute the sound on this television?"}
+{"id":"030_i","intent_id":"030","register":"informal","phenomena":["informal_lexicon", "abbreviation"],"query":"how do I hush the tv?"}
+
+{"id":"031_f","intent_id":"031","register":"formal","phenomena":[],"query":"Can you tell me where the baggage claim area is located?"}
+{"id":"031_i","intent_id":"031","register":"informal","phenomena":["dialect_word"],"query":"where do I get my grip?"}
+
+#{"id":"032_f","intent_id":"032","register":"formal","phenomena":[],"query":"Is it possible to change my flight departure date?"}
+{"id":"032_i","intent_id":"032","register":"informal","phenomena":["typo"],"query":"can i change my fligth date?"}
+
+{"id":"033_f","intent_id":"033","register":"formal","phenomena":[],"query":"Please provide the steps to enable two-factor authentication."}
+{"id":"033_i","intent_id":"033","register":"informal","phenomena":["abbreviation"],"query":"how to turn on 2FA?"}
+
+#{"id":"034_f","intent_id":"034","register":"formal","phenomena":[],"query":"I am looking for a place to purchase a carbon monoxide detector."}
+{"id":"034_i","intent_id":"034","register":"informal","phenomena":["noncanonical_syntax", "abbreviation"],"query":"where buy CO detector?"}
+
+{"id":"035_f","intent_id":"035","register":"formal","phenomena":[],"query":"Is there a grocery store in this neighborhood?"}
+# {"id":"035_i","intent_id":"035","register":"informal","phenomena":["dialect_word"],"query":"is there a bodega nearby?"}
+# dialect_word: bodega (common in NYC/regional contexts for a small grocery store)
+
+{"id":"036_f","intent_id":"036","register":"formal","phenomena":[],"query":"What is the most effective way to remove a wine stain?"}
+{"id":"036_i","intent_id":"036","register":"informal","phenomena":["informal_lexicon"],"query":"how do I get rid of a wine stain?"}
+# informal_lexicon: get rid of
+
+{"id":"037_f","intent_id":"037","register":"formal","phenomena":[],"query":"Does this television include a warranty?"}
+{"id":"037_i","intent_id":"037","register":"informal","phenomena":["typo","noncanonical_syntax"],"query":"this television come with warnaty?"}
+
+
+{"id":"038_f","intent_id":"038","register":"formal","phenomena":[],"query":"I need to find a place to park my car."}
+{"id":"038_i","intent_id":"038","register":"informal","phenomena":["informal_lexicon"],"query":"where can I stash my car?"}
+# informal_lexicon: stash
+
+{"id":"039_f","intent_id":"039","register":"formal","phenomena":[],"query":"Please check if the documents are ready."}
+{"id":"039_i","intent_id":"039","register":"informal","phenomena":["abbreviation"],"query":"check if the docs are ready"}
+
+{"id":"040_f","intent_id":"040","register":"formal","phenomena":[],"query":"Where is the nearest post office located?"}
+{"id":"040_i","intent_id":"040","register":"informal","phenomena":["abbreviation"],"query":"where is the nearest PO?"}
