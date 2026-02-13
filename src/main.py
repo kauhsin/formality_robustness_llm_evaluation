@@ -49,10 +49,18 @@ def main(input_path, output_path):
         is_paired = (counts.get('formal',0) > 0 ) and (counts.get('informal', 0) > 0)
 
         if not is_paired:
+            note = None
+            if 'formal' in missing:
+                note = 'missing formal variant'
+            elif 'informal' in missing:
+                note = 'missing informal variant'
+            else:
+                note = 'unexpected pairing state'
             bad_pairing_report[intent] = {
                 # 'is_paired': is_paired,
                 # 'details': dict(counts), # I comment this line only because it makes the output a bit too long
-                'missing': missing
+                'missing': missing,
+                'note': note
             }
 
 # generate summary, save to output_path

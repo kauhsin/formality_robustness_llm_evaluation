@@ -1,6 +1,7 @@
 ## Dataset Overview
 
-This dataset consists of controlled pairs of user queries that express the same underlying intent in different linguistic registers. The goal is to analyze how language variation impacts LLM understanding and response quality.
+This dataset contains controlled pairs of user queries that express the same intent in different linguistic registers (formal vs. informal).
+The goal is to evaluate how non-standard language variation affects LLM intent understanding and response quality in realistic user inputs.
 
 ---
 
@@ -34,7 +35,7 @@ Each data point represents a single user query.
 
 ## Linguistic Phenomena Labels
 
-A lightweight, product-oriented set of labels is used to characterize language variation in user inputs.
+The dataset uses a lightweight, product-oriented label set to characterize language variation commonly observed in real user queries.
 
 * **abbreviation**
 Shortened forms commonly used in informal contexts (e.g., "5yo", "u", "pls").
@@ -55,22 +56,20 @@ Shortened forms commonly used in informal contexts (e.g., "5yo", "u", "pls").
 
 ## Labeling Notes 
 
-* Multiple phenomena can co-occur in a single input (e.g., ["abbreviation", "informal_lexicon"]).
+* Multiple phenomena may co-occur in a single input (e.g., ["abbreviation", "informal_lexicon"]).
 
 * The label set is designed to be lightweight and product-oriented rather than a fine-grained linguistic taxonomy.
 
 * Minor surface variations (e.g., capitalization) are not annotated as separate phenomena in v1.
 
-## Need to add later
+## Dataset Scope and Roadmap
 
-The initial dataset uses synthetic informal variants to bootstrap the evaluation pipeline.
+The current dataset uses controlled synthetic informal variants to bootstrap the evaluation pipeline.
+Future iterations will incorporate naturally occurring user queries to improve ecological validity and stress-test robustness under real-world noise.
 
-In later phases, I plan to incorporate naturally occurring user queries to improve ecological validity and stress-test robustness under real-world noise.
+Query-style inputs such as “how to reset router” are treated as in-distribution user queries.
+The robustness analysis focuses on more disruptive variants (typos, abbreviations, dialectal words, informal lexicon) that are more likely to introduce distribution shift.
 
---- 
+## Usage
 
-We treat query-style forms like “how to reset router” as in-distribution user inputs, since they are very common in real-world training data.
-
-Our robustness analysis focuses on more disruptive variants such as typos, abbreviations, dialectal words, and informal lexicon that are more likely to cause distribution shift.
-
----
+All generated reports are saved under outputs/.
