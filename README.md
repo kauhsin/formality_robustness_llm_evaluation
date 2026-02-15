@@ -1,4 +1,5 @@
-## Dataset Overview
+# Dataset
+## Overview
 
 This dataset contains controlled pairs of user queries that express the same intent in different linguistic registers (formal vs. informal).
 The goal is to evaluate how non-standard language variation affects LLM intent understanding and response quality in realistic user inputs.
@@ -70,6 +71,13 @@ Future iterations will incorporate naturally occurring user queries to improve e
 Query-style inputs such as “how to reset router” are treated as in-distribution user queries.
 The robustness analysis focuses on more disruptive variants (typos, abbreviations, dialectal words, informal lexicon) that are more likely to introduce distribution shift.
 
-## Usage
+# Output
 
 All generated reports are saved under outputs/.
+
+## Pairing Check
+
+The dataset is organized around intent-matched formal–informal pairs.
+For each `intent_id`, the pipeline checks whether both variants are present to ensure valid controlled comparisons.
+
+Intents with missing variants are reported under `bad_pairing_analysis` in the output JSON.

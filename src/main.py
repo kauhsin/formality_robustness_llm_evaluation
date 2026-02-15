@@ -43,12 +43,14 @@ def main(input_path, output_path):
 
 # examine for each intent_id, whether both formal and informal records are available
     bad_pairing_report = {}
+    num_bad_pairings = 0
     for intent, counts in intent_register.items():
         missing = list({'formal','informal'} - set(counts.keys()))
         # is_paired = not missing # if missing == [], which is False, is_paired is not Faluse so is True; wait but what if there is a typo?
         is_paired = (counts.get('formal',0) > 0 ) and (counts.get('informal', 0) > 0)
 
         if not is_paired:
+            num_bad_pairings += 1
             note = None
             if 'formal' in missing:
                 note = 'missing formal variant'
@@ -69,11 +71,12 @@ def main(input_path, output_path):
         'by_register': dict(register_counter),
         'by_phenomena': dict(phenomena_counter),
         # "by_intent_id": dict(intent_counter)
+        'num_bad_pairings': num_bad_pairings,
         'bad_pairing_analysis': bad_pairing_report
     }
 
     with open(output_path, 'w', encoding= 'utf-8') as f:
-        json.dump(summary, f, ensure_ascii=False, indent=2, sort_keys=True)
+        json.dump(summary, f, ensure_ascii=False, indent=2, sort_keys=False)
 
 if __name__ == '__main__': # when this script is called from CLI directly
     if len(sys.argv) == 2 and sys.argv[1] in ('-h', '--help'):
