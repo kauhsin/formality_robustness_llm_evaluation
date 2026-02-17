@@ -157,4 +157,36 @@
 {"id":"049_i","intent_id":"049","register":"informal","phenomena":["noncanonical_syntax"],"query":"guest wifi pass?"}
 
 {"id":"050_f","intent_id":"050","register":"formal","phenomena":[],"query":"I wish to speak with the manager regarding a complaint."}
-# {"id":"050_i","intent_id":"050","register":"informal","phenomena":["informal_lexicon","noncanonical_syntax"],"query":"i need to holla at the boss"}
+{"id":"050_i","intent_id":"050","register":"informal","phenomena":["informal_lexicon","noncanonical_syntax"],"query":"i need to holla at the boss"}
+
+{"id":"051_f","intent_id":"051","register":"formal","phenomena":[],"query":"Could you please direct me to the nearest department store?"}
+{"id":"051_i","intent_id":"051","register":"informal","phenomena":["informal_lexicon", "noncanonical_syntax"],"query":"where's the closest mall at?"}
+
+{"id":"052_f","intent_id":"052","register":"formal","phenomena":[],"query":"I am interested in purchasing a new mobile device."}
+{"id":"052_i","intent_id":"052","register":"informal","phenomena":["informal_lexicon", "noncanonical_syntax"],"query":"wanna buy a new phone"}
+
+{"id":"053_f","intent_id":"053","register":"formal","phenomena":[],"query":"What is the current exchange rate for the US dollar?"}
+{"id":"053_i","intent_id":"053","register":"informal","phenomena":["noncanonical_syntax"],"query":"dollar rate right now?"}
+
+{"id":"054_f","intent_id":"054","register":"formal","phenomena":[],"query":"How can I troubleshoot my slow internet connection?"}
+{"id":"054_i","intent_id":"054","register":"informal","phenomena":["informal_lexicon","noncanonical_syntax"],"query":"why's my net so laggy?"}
+# informal_lexicon: laggy
+
+{"id":"055_f","intent_id":"055","register":"formal","phenomena":[],"query":"Is there a public library in this neighborhood?"}
+{"id":"055_i","intent_id":"055","register":"informal","phenomena":["typo"],"query":"Is there a libary nearby?"}
+
+{"id":"056_f","intent_id":"056","register":"formal","phenomena":[],"query":"I would like to verify the status of my application."}
+{"id":"056_i","intent_id":"056","register":"informal","phenomena":["abbreviation"],"query":"could you check my app status?"}
+
+{"id":"057_f","intent_id":"057","register":"formal","phenomena":[],"query":"What is the usage guideline for this product?"}
+{"id":"057_i","intent_id":"057","register":"informal","phenomena":[],"query":"how do I use this product?"}
+
+{"id":"058_f","intent_id":"058","register":"formal","phenomena":[],"query":"Are there any vegetarian options available on the menu?"}
+{"id":"058_i","intent_id":"058","register":"informal","phenomena":["informal_lexicon"],"query":"are there any veggie options?"}
+
+{"id":"059_f","intent_id":"059","register":"formal","phenomena":[],"query":"How do I transfer my photos to a computer?"}
+{"id":"059_i","intent_id":"059","register":"informal","phenomena":["informal_lexicon"],"query":"how to dump pics onto my laptop?"}
+# informal_lexicon: dump (as in data transfer)
+
+{"id":"060_f","intent_id":"060","register":"formal","phenomena":[],"query":"I am unable to access my account at this time."}
+{"id":"060_i","intent_id":"060","register":"informal","phenomena":[],"query":"I can’t get into my account"}
