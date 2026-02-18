@@ -10,7 +10,7 @@ def main(input_path, output_path):
     response_text = 'STUB_RESPONSE'
     notes = 'this is a placeholder for now'
 
-# load dataset, get id, intent_id of each valid row
+# load dataset, get sample_id, intent_id of each valid row
     with open(input_path, 'r', encoding= 'utf-8') as f:
         for line_num, line in enumerate(f, 1):
             line = line.strip()
@@ -19,13 +19,12 @@ def main(input_path, output_path):
 
             try:
                 obj = json.loads(line)
-                id = obj.get('id', 'unknown').lower().strip()
-                if id == 'unknown':
+                sample_id = obj.get('id', 'unknown').lower().strip()
+                if sample_id == 'unknown':
                     continue
                 intent_id = obj.get('intent_id', 'unknown').lower().strip()
                 if intent_id == 'unknown':
                     continue
-                total += 1
 
 # Get information of register, phenomena, query
 ## register
@@ -44,9 +43,10 @@ def main(input_path, output_path):
                 query = obj.get('query', 'unknown').lower().strip()
 
 # compile a result dict for the current row
-                results[id] = {
-                    'id': id,
-                    'intend_id': intent_id,
+                total += 1
+                results[sample_id] = {
+                    'id': sample_id,
+                    'intent_id': intent_id,
                     'register': register,
                     'phenomena': phenomena_list,
                     'query': query,
