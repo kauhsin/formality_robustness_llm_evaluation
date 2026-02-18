@@ -3,7 +3,6 @@ import sys, json
 def main(input_path, output_path):
     total = 0
     results = {}
-    rubric_scores_report = {}
     error_labels = ['placeholder']
     notes = 'this is a placeholder for now'
     key = ''
@@ -32,15 +31,17 @@ def main(input_path, output_path):
             
             try:
                 obj = json.loads(line)
+                rubric_scores_report = {}
 
 # Compute rubric_scores report. put in dummy scores for now.
                 register = obj.get('register', 'unknown').lower().strip()         
                 intent_id = obj.get('intent_id', 'unknown').lower().strip()
-                if intent_id != 'unknown' and ((register == 'formal') or (register == 'informal')):
+                id = obj.get('id', 'unknown').lower().strip()
+                if (id!= 'unknown') and (intent_id != 'unknown') and ((register == 'formal') or (register == 'informal')):
                     total += 1
 # replace placeholders later                    
-                    key = f'{intent_id}_{register}'
-                    results[key] = {
+                    results[id] = {
+                        'id': id,
                         'intent_id': intent_id,
                         'register': register,
                         'rubric_scores': dict(rubric_scores_report),
