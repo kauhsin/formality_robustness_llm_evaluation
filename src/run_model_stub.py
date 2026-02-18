@@ -40,7 +40,7 @@ def main(input_path, output_path):
                         continue
                     phenomena_list.append(clean_p)
 ## query
-                query = obj.get('query', 'unknown').lower().strip()
+                query = obj.get('query', 'unknown').strip()
 
 # compile a result dict for the current row
                 total += 1
