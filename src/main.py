@@ -4,13 +4,14 @@ from collections import Counter, defaultdict
 # print("I am:", __name__)
 
 def main(input_path, output_path):
+    # Reads a JSONL dataset and computes basic stats + intent-level pairing checks
     total = 0
     register_counter = Counter()
     phenomena_counter = Counter()
     # intent_counter = Counter()
     intent_register = defaultdict(Counter)
 
-# Load JSONL data into memory
+# Load JSONL data
     with open(input_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f,1):
             line = line.strip()
@@ -34,7 +35,6 @@ def main(input_path, output_path):
                     phenomena_counter[clean_p] += 1
             
                 intent_id = obj.get('intent_id', 'unknown').lower().strip()
-                # intent_counter[intent_id] += 1
                 if intent_id != 'unknown':
                     intent_register[intent_id][register] += 1
 
