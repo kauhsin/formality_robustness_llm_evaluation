@@ -65,7 +65,7 @@ def main(input_path, output_path):
     }
 
     with open(output_path, 'w', encoding= 'utf-8') as f:
-        json.dump(summary, f, indent= 2)
+        json.dump(summary, f, indent = 2)
 
 if __name__ == '__main__':
     if len(sys.argv) == 2 and sys.argv[1] in ('-h', '--help'):
