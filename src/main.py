@@ -26,6 +26,7 @@ def main(input_path, output_path):
                 register = obj.get('register', 'unknown').lower().strip()
                 if register not in {'formal', 'informal'}:
                     continue
+                
                 register_counter[register] += 1
 
                 for p in obj.get('phenomena', []):
