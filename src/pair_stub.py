@@ -1,7 +1,6 @@
 import sys, json
 
 def main(input_path, output_path):
-    total = 0
 # read in data from score_outputs_stub.py (score_XXXXXXXX.json)
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -19,14 +18,13 @@ def main(input_path, output_path):
         rubric_scores = sample.get('rubric_scores',{})
         error_labels = sample.get('error_labels',[])
         notes = sample.get('notes')
+        response_text = sample.get('response_text')
 
         if not intent_id or intent_id == 'unknown':
             continue
         if register not in ('formal', 'informal'):
             continue
 
-# placeholder for getting response text
-        response_text = 'this is a placeholder for now'
 # Compile pairs
         if intent_id not in pairs:
             pairs[intent_id] = {}

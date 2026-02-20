@@ -17,13 +17,15 @@ def main(input_path, output_path):
         register = sample.get('register')
         phenomena = sample.get('phenomena',[])
         query = sample.get('query')
+        response_text = sample.get('response_text')
+        notes = sample.get('notes')
+
 # define an empty dict for rubric scores for the current sample
         rubric_scores = {}
-# placeholder for getting rubric scores
+# placeholder for getting rubric scores and error labels
         for item in rubric_items:
             rubric_scores[item] = None
         error_labels = ['placeholder']
-        notes = 'this is a placeholder for now'
 # compile results
         results[sample_id] = {
             'id':sample_id,
@@ -33,7 +35,8 @@ def main(input_path, output_path):
             'query':query,
             'rubric_scores':rubric_scores,
             'error_labels':list(error_labels),
-            'notes':notes
+            'notes':notes,
+            'response_text':response_text
         }
 # compile summary
     summary = {
