@@ -63,3 +63,6 @@ Rubric 10: Grammatically well-formed and readable (1)<br>
 
 Rubric 11: Clear and coherent expression (1)<br>
     The response is coherent and easy to follow, without confusing or contradictory statements.
+
+Rubric 12: Concise expression (1)<br>
+    The response is concise, avoiding unnecessary verbosity..
