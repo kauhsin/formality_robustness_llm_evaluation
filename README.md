@@ -8,14 +8,17 @@ The goal is to build a lightweight, reproducible pipeline for probing LLM robust
 
 ---
 
-## What’s implemented (v0)
+## Goals & What’s implemented (v0)
 
-The current version focuses on dataset health checks and controlled evaluation setup:
+The current version focuses on building a reproducible evaluation scaffold and dataset health checks:
 
 - Intent-matched formal–informal query pairs to isolate the effect of language variation
 - Lightweight linguistic phenomena labels (e.g., typo, abbreviation, informal_lexicon)
 - Dataset composition statistics (by register and phenomenon)
 - Automatic pairing validation to ensure each intent has both formal and informal variants (`bad_pairing_analysis`)
+
+Things achieved:
+ - (New) API runner wired for Gemini (head test validated on 4 paired samples)
 
 ---
 
@@ -27,12 +30,47 @@ The evaluation pipeline is built around intent-matched formal–informal pairs a
 - `Variant labeling`: Each input is annotated with high-level linguistic phenomena (e.g., typo, abbreviation, dialect_word).
 - `Statistics`: Aggregate counts by register and phenomenon to inspect dataset composition.
 - `Pairing check`: Validate that each intent_id has both formal and informal variants for controlled analysis.
-- `(Planned)` Error analysis and rubric-based evaluation of LLM outputs in later phases.
+- `(Planned)` Model-output evaluation is documented in the Evaluation section.
 
 This design supports systematic comparison between standard and non-standard language inputs while remaining lightweight and easy to extend.
 
 
 Evaluation rubrics and error taxonomy are documented under `docs/`.
+
+---
+
+## Minimal Analysis Framework (Draft v0)
+
+This section outlines the planned analysis axes for interpreting model behavior on formal–informal intent-matched pairs.  
+The framework is intended as an analysis plan rather than finalized results, and will be iteratively refined as more model outputs are collected.
+
+### A1. Formal vs Informal Performance Gap
+**Question**  
+Does model performance degrade when the input is informal compared to its formal counterpart?
+
+**Planned metrics / checks**  
+- Pair-level performance difference between formal and informal variants  
+- Proportion of intent pairs where the informal variant underperforms the formal variant  
+- Qualitative differences in response completeness or specificity
+
+### A2. Sensitivity to Linguistic Phenomena
+**Question**  
+Which types of linguistic variation (e.g., typos, abbreviations, informal lexicon, dialect words) are most likely to degrade model performance?
+
+**Planned metrics / checks**  
+- Performance grouped by phenomenon category  
+- Error rates conditioned on specific phenomena types  
+- Comparison of error patterns across phenomena
+
+### A3. Error Pattern Distribution
+**Question**  
+Do certain error types (as defined in the error taxonomy) occur more frequently under informal or non-standard inputs?
+
+**Planned metrics / checks**  
+- Distribution of error labels (E1–E10) for formal vs informal inputs  
+- Relative increase of specific error types under informal variants
+
+> Note: This analysis framework represents a top-down plan for interpreting results and will be updated based on empirical observations from model outputs.
 
 ---
 
@@ -55,6 +93,9 @@ Generate summary reports from a JSONL dataset (*Bash code*):
 ```bash
 python src/main.py data/dataset_v0.jsonl --out outputs/summary_v0.json
 ```
+
+This command reads a JSONL dataset and outputs dataset statistics and pairing validation results as a JSON report.
+
 All generated reports are saved under `outputs/`.
 
 ---
@@ -69,6 +110,24 @@ The summary report includes:
 - Pairing validation results (`bad_pairing_analysis`), indicating intents with missing formal or informal variants
 
 These reports support controlled robustness analysis and dataset quality inspection.
+
+### Output schema
+
+```json{
+  "intent_id": "book_flight",
+  "register": "informal",
+  "prompt": "...",
+  "response_text": "...",
+  "model_name": "gpt-4.1",
+  "model_version": "2026-02-xx",
+  "rubric_scores": {
+    "intent_correct": 1,
+    "politeness": 0
+  },
+  "error_labels": ["E5", "E10"]
+}
+
+---
 
 ### Pairing check
 

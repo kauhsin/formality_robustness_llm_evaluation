@@ -38,8 +38,8 @@ def main(input_path: str, output_path: str) -> None:
     valid_phenomena = {'abbreviation', 'dialect_word', 'informal_lexicon', 'noncanonical_syntax', 'typo'}
 
     # Placeholders to be replaced/updated on Day 13
-    model_name = 'api_model_tbd'
-    notes = 'api runner placeholder; call_model_api not implemented yet'
+    model_name = 'gemini-2.5-flash'
+    notes = 'Gemini API call; tiny run; free tier quota constraints.'
 
     with open(input_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
