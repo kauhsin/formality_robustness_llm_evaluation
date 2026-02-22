@@ -1,13 +1,34 @@
 import sys
 import json
-
+import time
+import os
+from google import genai
 
 def call_model_api(prompt: str) -> str:
     """
-    Temporary stub for Day 12: returns a constant string so the pipeline can run.
-    Replace with a real API call on Day 13.
+    Call Gemini Developer API and return plain text output.
+    Includes minimal retry/backoff for transient errors and rate limits.
     """
-    return 'STUB_RESPONSE'
+    client = genai.Client(api_key=os.environ.get('GEMINI_API_KEY'))
+
+    model  = 'gemini-2.5-flash'
+
+    max_attempts = 8
+    delay_s = 5.0
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            resp = client.models.generate_content(
+                model=model,
+                contents=prompt
+            )
+            return (resp.text or '').strip()
+
+        except Exception as e:
+            if attempt == max_attempts:
+                raise
+            time.sleep(delay_s)
+            delay_s *= 2
 
 
 def main(input_path: str, output_path: str) -> None:
@@ -57,6 +78,7 @@ def main(input_path: str, output_path: str) -> None:
 
                 # On Day 13, this will produce real model output
                 response_text = call_model_api(prompt)
+                time.sleep(13)
 
                 total += 1
                 results[sample_id] = {

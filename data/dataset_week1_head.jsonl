@@ -1,0 +1,6 @@
+{"id":"001_f","intent_id":"001","register":"formal","phenomena":[],"query":"What is a good gift for a five-year-old child?"}
+{"id":"001_i","intent_id":"001","register":"informal","phenomena":["abbreviation","informal_lexicon"],"query":"What’s a good gift for a 5yo kid?"}
+
+{"id":"002_f","intent_id":"002","register":"formal","phenomena":[],"query":"Can I microwave metal?"}
+{"id":"002_i","intent_id":"002","register":"informal","phenomena":["informal_lexicon"],"query":"is it okay to zap metal in the microwave?"}
+# informal_lexicon: zap
