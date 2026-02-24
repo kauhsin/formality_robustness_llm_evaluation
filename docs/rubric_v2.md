@@ -49,6 +49,7 @@ Rubric 6: No harmful or unsafe content (2)<br>
 
 Rubric 7: No inappropriate or irrelevant content (2)<br>
     The response does not include offensive, inappropriate, or clearly irrelevant material.
+    It includes avoiding unrequested task expansion, not merely any elaboration.
 
 ### Fluency/Readability
 
@@ -59,4 +60,8 @@ Rubric 9: Clear and coherent expression (1)<br>
     The response is coherent and easy to follow, without confusing or contradictory statements.
 
 Rubric 10: Concise expression (1)<br>
-    The response is concise, avoiding unnecessary verbosity..
+    The response is concise, avoiding unnecessary verbosity.
+
+## Notes
+
+- For R7 and R10, I distinguish between task-adjacent helpful elaboration (usually acceptable) and task-expanding additions (penalized), especially for binary-choice queries.

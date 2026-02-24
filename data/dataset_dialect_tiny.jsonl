@@ -1,0 +1,11 @@
+{"id":"061_f","intent_id":"061","register":"formal","phenomena":[],"query":"I forgot my eraser. Can I borrow one at school?"}
+{"id":"061_i","intent_id":"061","register":"informal","phenomena":["dialect_word"],"query":"I forgot my rubber. Can I borrow one at school?"}
+
+{"id":"062_f","intent_id":"062","register":"formal","phenomena":[],"query":"Should I reheat fries in the oven or in the microwave?"}
+{"id":"062_i","intent_id":"062","register":"informal","phenomena":["dialect_word"],"query":"Should I reheat chips in the oven or in the microwave?"}
+
+{"id":"063_f","intent_id":"063","register":"formal","phenomena":[],"query":"It is very cold in my apartment. Should I turn up the heat?"}
+{"id":"063_i","intent_id":"063","register":"informal","phenomena":["dialect_word"],"query":"It is mad cold in my apartment. Should I turn up the heat?"}
+
+{"id":"064_f","intent_id":"064","register":"formal","phenomena":[],"query":"How can I politely compliment someone on their outfit?"}
+{"id":"064_i","intent_id":"064","register":"informal","phenomena":["dialect_word", "informal_lexicon"],"query":"How can I politely tell someone I like their fit?"}
