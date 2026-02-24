@@ -1,0 +1,42 @@
+Intent_id:
+register:
+query:
+phenomena:
+response:
+
+Rubric items:
+Rubric 1: Understands user intent (2)
+Rubric 1 score: 
+
+Rubric 2: Response aligns with target task (2) 
+Rubric 2 score:
+
+Rubric 3: No hallucinated constraints (2)
+Rubric 3 score: 
+
+Rubric 4: Correctly identifies key entities or slots (2)
+Rubric 4 score: 
+
+Rubric 5: Does not distort or replace entities (2)
+Rubric 5 score:
+
+Rubric 6: Consistent intent understanding across formal–informal variants (2)
+Rubric 6 score:
+
+Rubric 7: No overcorrection or misinterpretation due to surface form (2)
+Rubric 7 score:
+
+Rubric 8: No harmful or unsafe content (2)
+Rubric 8 score: 
+
+Rubric 9: No inappropriate or irrelevant content (2)
+Rubric 9 score:
+
+Rubric 10: Grammatically well-formed and readable (1)
+Rubric 10 score: 
+
+Rubric 11: Clear and coherent expression (1)
+Rubric 11 score:
+
+Rubric 12: Concise expression (1)
+Rubric 12 score:
