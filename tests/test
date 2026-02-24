@@ -1,0 +1,48 @@
+import json
+import os
+from collections import Counter
+
+# 1. 获取当前脚本 (test.py) 所在的绝对路径
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# 1-2. 结合文件名，生成该目录下文件的路径
+input_path = os.path.join(current_dir, 'sample.jsonl')
+print(f"当前使用的dir: {current_dir}")
+
+total = 0
+register_counter = Counter()
+phenomena_counter = Counter()
+intent_counter = Counter()
+
+# Load JSONL data into memory
+with open(input_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        
+        try:
+            obj = json.loads(line)
+
+            total += 1
+# Compute basic stats by register, phenomena, and intent_id
+            register = obj.get("register", "unknown")
+            register_counter[register] += 1
+
+            for p in obj.get("phenomena", []):
+                phenomena_counter[p] += 1
+            
+            intent_id = obj.get("intent_id", "unknown")
+            intent_counter[intent_id] += 1
+
+        except json.JSONDecodeError:
+            print(f"Row {line_num} is skipped")
+
+# generate summary, save to output_path
+summary = {
+        "total": total,
+        "by_register": dict(register_counter),
+        "by_phenomena": dict(phenomena_counter),
+        # "by_intent_id": dict(intent_counter)
+    }
+
+print('it works')
