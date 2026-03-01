@@ -28,5 +28,3 @@ Do certain error types (as defined in the error taxonomy) occur more frequently 
 - Relative increase of specific error types under informal variants
 
 > Note: This analysis framework represents a top-down plan for interpreting results and will be updated based on empirical observations from model outputs.
-
----
