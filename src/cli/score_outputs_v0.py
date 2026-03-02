@@ -3,16 +3,17 @@ import pandas as pd
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-i','--in_csv',default='outputs/manual_scores/dialect_word_pilot_v0.csv')
-parser.add_argument('-o','--out',default='outputs/score_summary_dialect_word_pilot_v0.json')
-parser.add_argument('-p','--pair',default='outputs/pairing_dialect_word_pilot_v0.json')
+parser.add_argument('-o','--out',default='outputs/after_api/score_dialect_word_pilot_v0.json')
+parser.add_argument('-p','--pair_out',default='outputs/after_api/pairing_dialect_word_pilot_v0.json')
 
 def main():
     args = parser.parse_args()
     input_path = args.in_csv
     output_path = args.out
-    pair_path = args.pair
+    pair_path = args.pair_out
     print('Input path:', input_path)
     print('Output path:', output_path)
+    print('Pair path:', pair_path)
 
     ds = pd.read_csv(input_path)
     ds = ds[
@@ -59,6 +60,7 @@ def main():
     
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=2)
+    print('Score outputs written in outputs/after_api')
 
     # Pairing results
     pairs = {}
@@ -79,6 +81,7 @@ def main():
 
     with open(pair_path, 'w', encoding='utf-8') as f:
         json.dump(pairs_summary, f, indent = 2)
+    print('Pairs written in outputs/after_api')
 
 if __name__ == '__main__':
     main()

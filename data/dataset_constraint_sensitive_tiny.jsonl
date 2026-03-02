@@ -1,0 +1,11 @@
+{"id":"069_f","intent_id":"069","register":"formal","phenomena":[],"query":"Please explain opportunity cost for a high school student in 90 to 110 words, in one paragraph, and avoid technical jargon."}
+{"id":"069_i","intent_id":"069","register":"informal","phenomena":["informal_lexicon"],"query":"Can you break down opportunity cost for a high schooler in about 90 to 110 words, all in one paragraph, and keep it super simple with no jargon?"}
+
+{"id":"070_f","intent_id":"070","register":"formal","phenomena":[],"query":"Please explain plate tectonics for a high school student in 3 short sentences, with no bullet points, and avoid advanced scientific vocabulary."}
+{"id":"070_i","intent_id":"070","register":"informal","phenomena":["abbreviation"],"query":"Pls explain plate tectonics for a HS student in 3 short sents, no bullet pts, and avoid adv sci vocab."}
+
+{"id":"071_f","intent_id":"071","register":"formal","phenomena":[],"query":"I keep procrastinating on homework. Please give advice in 2 short paragraphs: the first should explain what to do, the second should explain what to avoid, and do not use bullet points."}
+{"id":"071_i","intent_id":"071","register":"informal","phenomena":["noncanonical_syntax"],"query":"Keep putting off homework. Need advice in 2 short paragraphs: first what to do, second what not to do, no bullet points."}
+
+{"id":"072_f","intent_id":"072","register":"formal","phenomena":[],"query":"Which is better for studying, early morning or late at night? Please choose one clearly, keep the answer under 90 words, write it in one paragraph, and do not introduce a third option."}
+{"id":"072_i","intent_id":"072","register":"informal","phenomena":["noncanonical_syntax"],"query":"Which is better for studying, early morning or late at night? Pick 1 clearly, keep it under 90 words, put it all in 1 paragraph, and don’t bring up a 3rd option."}
