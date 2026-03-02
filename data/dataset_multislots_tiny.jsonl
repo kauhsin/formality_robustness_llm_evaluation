@@ -1,0 +1,11 @@
+{"id":"065_f","intent_id":"065","register":"formal","phenomena":[],"query":"What kind of restaurant would be a good choice for dinner tomorrow at 7:30 pm for 4 people with a budget of under $30 per person?"}
+{"id":"065_i","intent_id":"065","register":"informal","phenomena":["abbreviation"],"query":"What kind of place is good for dinner tmr at 7:30 for 4 ppl, under $30 each?"}
+
+{"id":"066_f","intent_id":"066","register":"formal","phenomena":[],"query":"Which time would be better for a dermatology appointment next week, Tuesday morning or Thursday afternoon?"}
+{"id":"066_i","intent_id":"066","register":"informal","phenomena":["abbreviation","noncanonical_syntax"],"query":"For a derm appt next wk, Tue morning or Thu afternoon better?"}
+
+{"id":"067_f","intent_id":"067","register":"formal","phenomena":[],"query":"What is a good birthday gift for a 10-year-old who likes drawing, already has plenty of art supplies, with a budget of $25?"}
+{"id":"067_i","intent_id":"067","register":"informal","phenomena":["abbreviation","informal_lexicon"],"query":"What's a good bday gift for a 10yo kid who's into drawing, already has a ton of art stuff, and is around $25?"}
+
+{"id":"068_f","intent_id":"068","register":"formal","phenomena":[],"query":"What is the best public transportation option from Penn Station to JFK Airport tomorrow at 6 am, with a budget of under 50 USD?"}
+{"id":"068_i","intent_id":"068","register":"informal","phenomena":["abbreviation","informal_lexicon"],"query":"Best public transit option from Penn Station to JFK tmr at 6am, under 50 bucks?"}
