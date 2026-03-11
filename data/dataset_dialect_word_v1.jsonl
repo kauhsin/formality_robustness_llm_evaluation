@@ -1,0 +1,17 @@
+{"id":"079_f","intent_id":"079","register":"formal","phenomena":[],"query":"I just submitted my assignment on Sunday night. What should I do now?"}
+{"id":"079_i","intent_id":"079","register":"informal","phenomena":["dialect_word"],"query":"I’m after submitting my assignment on Sunday night. What should I do now?"}
+
+{"id":"080_f","intent_id":"080","register":"formal","phenomena":[],"query":"Are trousers acceptable for a job interview?"}
+{"id":"080_i","intent_id":"080","register":"informal","phenomena":["dialect_word"],"query":"Are pants acceptable for a job interview?"}
+
+{"id":"081_f","intent_id":"081","register":"formal","phenomena":[],"query":"Draft a short Slack message suggesting we move the meeting earlier to Wednesday."}
+{"id":"081_i","intent_id":"081","register":"informal","phenomena":["dialect_word"],"query":"Draft a short Slack message suggesting we prepone the meeting to Wednesday."}
+
+{"id":"082_f","intent_id":"082","register":"formal","phenomena":[],"query":"Should I bring a sweater to the office if the air conditioning is strong?"}
+{"id":"082_i","intent_id":"082","register":"informal","phenomena":["dialect_word"],"query":"Should I bring a jumper to the office if the air con is strong?"}
+
+{"id":"S001_f","intent_id":"083","register":"formal","phenomena":[],"query":"I’m confused about the instructions at the driving school. Can you clarify what I should do first?"}
+{"id":"S001_i","intent_id":"083","register":"informal","phenomena":["dialect_word"],"query":"I’m blur about the instructions at the driving school. What should I do first?"}
+
+{"id":"084_f","intent_id":"084","register":"formal","phenomena":[],"query":"Are flip-flops okay to wear on a casual summer day out?"}
+{"id":"084_i","intent_id":"084","register":"informal","phenomena":["dialect_word"],"query":"Are thongs okay to wear on a casual summer day out?"}

@@ -1,0 +1,17 @@
+{"id":"073_f","intent_id":"073","register":"formal","phenomena":[],"query":"Explain compound interest to a high school student in 90–110 words, as one paragraph, with no jargon."}
+{"id":"073_i","intent_id":"073","register":"informal","phenomena":["informal_lexicon"],"query":"Can you break down compound interest for a high school kid in 90–110 words, one paragraph, with no jargon?"}
+
+{"id":"074_f","intent_id":"074","register":"formal","phenomena":[],"query":"Give two strategies to reduce screen time. Use exactly 3 sentences, no bullet points, and keep it under 60 words."}
+{"id":"074_i","intent_id":"074","register":"informal","phenomena":["noncanonical_syntax"],"query":"Need 2 ways to cut screen time, exactly 3 sentences, no bullets, under 60 words."}
+
+{"id":"075_f","intent_id":"075","register":"formal","phenomena":[],"query":"Summarize the main idea of photosynthesis in 70–90 words, one paragraph, and avoid using the words \"chlorophyll\" and \"glucose\"."}
+{"id":"075_i","intent_id":"075","register":"informal","phenomena":["abbreviation"],"query":"Summarize photosynthesis in 70–90 words, 1 para. Don’t use \"chlorophyll\" or \"glucose\"."}
+
+{"id":"076_f","intent_id":"076","register":"formal","phenomena":[],"query":"Recommend one beginner workout plan for strength. Use exactly 4 steps, each step must start with a verb, and do not mention diet."}
+{"id":"076_i","intent_id":"076","register":"informal","phenomena":["noncanonical_syntax"],"query":"Recommend a beginner strength workout plan. Exactly 4 steps, each step starts with a verb, and don't talk no food."}
+
+{"id":"077_f","intent_id":"077","register":"formal","phenomena":[],"query":"Explain what \"confirmation bias\" means using a single example. Write 80–100 words, one paragraph, and do not use the word \"bias\"."}
+{"id":"077_i","intent_id":"077","register":"informal","phenomena":["abbreviation", "noncanonical_syntax"],"query":"What’s confirmation bias? Explain it w/ one example in 80–100 words, one paragraph, and don’t use the word \"bias\"."}
+
+{"id":"078_f","intent_id":"078","register":"formal","phenomena":[],"query":"Give a polite two-sentence reply to decline a party invitation. Do not use the words \"sorry\" or \"can't\", and keep it under 30 words."}
+{"id":"078_i","intent_id":"078","register":"informal","phenomena":[],"query":"Write a polite 2-sentence text to decline a party invite. Don’t use \"sorry\" or \"can’t\", and keep it under 30 words."}
