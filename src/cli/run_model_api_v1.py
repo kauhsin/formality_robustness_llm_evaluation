@@ -95,10 +95,8 @@ def main():
 
                 # Minimal prompt construction: use query directly
                 prompt = query
-
-                # On Day 13, this will produce real model output
                 response_text = call_model_api(prompt)
-                time.sleep(13)
+                time.sleep(18)
 
                 total += 1
                 results[sample_id] = {
